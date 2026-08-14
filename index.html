@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Lost Algorithm</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MAIN MENU -->
+    <section id="mainMenu" class="screen active">
+        <div class="menu-container">
+            <h1>THE LOST ALGORITHM</h1>
+
+            <p class="subtitle">
+                An Educational Adventure
+            </p>
+
+            <button onclick="startGame()">NEW GAME</button>
+            <button onclick="showInstructions()">HOW TO PLAY</button>
+        </div>
+    </section>
+
+
+    <!-- STORY SCREEN -->
+    <section id="storyScreen" class="screen">
+
+        <div class="story-container">
+
+            <h2>THE DIGITAL WORLD</h2>
+
+            <p id="storyText">
+                Something has gone terribly wrong...
+            </p>
+
+            <button onclick="nextStory()">CONTINUE</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- GAME SCREEN -->
+    <section id="gameScreen" class="screen">
+
+        <div class="game-ui">
+
+            <div class="game-title">
+                HARDWARE KINGDOM
+            </div>
+
+            <div class="stats">
+                SCORE: <span id="score">0</span>
+            </div>
+
+        </div>
+
+
+        <div id="gameWorld">
+
+            <div id="player"></div>
+
+            <div id="computer" class="object">
+                🖥️
+            </div>
+
+            <div id="hardwareBox" class="object">
+                📦
+            </div>
+
+            <div id="npc" class="object">
+                🧑‍💻
+            </div>
+
+        </div>
+
+
+        <div class="controls">
+            <p>Use <b>W A S D</b> or <b>Arrow Keys</b> to move.</p>
+            <p>Walk near objects to interact.</p>
+        </div>
+
+    </section>
+
+
+    <!-- INSTRUCTIONS -->
+    <section id="instructionsScreen" class="screen">
+
+        <div class="instructions-container">
+
+            <h2>HOW TO PLAY</h2>
+
+            <p>
+                Explore the Digital World and complete educational
+                challenges to restore the Lost Algorithm.
+            </p>
+
+            <p>
+                Use the <b>W A S D</b> keys or arrow keys to move
+                your character.
+            </p>
+
+            <p>
+                Interact with objects and characters to discover
+                challenges.
+            </p>
+
+            <button onclick="backToMenu()">BACK</button>
+
+        </div>
+
+    </section>
+
+
+    <script src="game.js"></script>
+
+</body>
+</html>
