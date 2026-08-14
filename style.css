@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+    overflow: hidden;
+}
+
+
+/* =========================
+   GENERAL SCREEN
+========================= */
+
+.screen {
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.screen.active {
+    display: flex;
+}
+
+
+/* =========================
+   MAIN MENU
+========================= */
+
+#mainMenu {
+    background:
+        radial-gradient(circle at center, #26345f, #080b16);
+}
+
+.menu-container {
+    text-align: center;
+}
+
+.menu-container h1 {
+    font-size: 52px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+button {
+    display: block;
+
+    width: 220px;
+
+    margin: 15px auto;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #111;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+#storyScreen {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.85)
+        );
+}
+
+.story-container {
+    width: 700px;
+    max-width: 90%;
+
+    text-align: center;
+}
+
+.story-container h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.story-container p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   GAME UI
+========================= */
+
+#gameScreen {
+    display: none;
+    flex-direction: column;
+}
+
+#gameScreen.active {
+    display: flex;
+}
+
+.game-ui {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 25px;
+
+    background: #111827;
+}
+
+.game-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.stats {
+    font-weight: bold;
+}
+
+
+/* =========================
+   GAME WORLD
+========================= */
+
+#gameWorld {
+    position: relative;
+
+    width: 900px;
+    max-width: 90vw;
+
+    height: 600px;
+    max-height: 75vh;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #172033 0px,
+            #172033 39px,
+            #1c2940 40px
+        );
+
+    border: 4px solid #374151;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   PLAYER
+========================= */
+
+#player {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    left: 430px;
+    top: 280px;
+
+    z-index: 10;
+}
+
+
+/* =========================
+   OBJECTS
+========================= */
+
+.object {
+    position: absolute;
+
+    font-size: 45px;
+
+    user-select: none;
+}
+
+#computer {
+    left: 150px;
+    top: 150px;
+}
+
+#hardwareBox {
+    left: 650px;
+    top: 180px;
+}
+
+#npc {
+    left: 420px;
+    top: 100px;
+}
+
+
+/* =========================
+   CONTROLS
+========================= */
+
+.controls {
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    opacity: 0.7;
+}
+
+
+/* =========================
+   INSTRUCTIONS
+========================= */
+
+.instructions-container {
+    width: 600px;
+    max-width: 90%;
+
+    text-align: center;
+}
+
+.instructions-container h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.instructions-container p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
